@@ -22,7 +22,7 @@
         android:id="@+id/imageView2"
         android:layout_width="44dp"
         android:layout_height="30dp"
-        android:src="@tools:sample/avatars"
+
         app:srcCompat="@drawable/menu_bar"
         tools:layout_editor_absoluteX="351dp"
         tools:layout_editor_absoluteY="28dp" />
@@ -61,7 +61,7 @@
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
             android:layout_height="145dp"
-            android:src="@tools:sample/avatars"
+
             app:srcCompat="@drawable/community_icon" />
 
         <TextView
@@ -88,7 +88,7 @@
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
             android:layout_height="145dp"
-            android:src="@tools:sample/avatars"
+
             app:srcCompat="@drawable/marketplace_icon" />
 
         <TextView
@@ -102,3 +102,6 @@
             android:textStyle="bold" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+       
+
+  
