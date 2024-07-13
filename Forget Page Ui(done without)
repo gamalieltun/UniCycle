@@ -1,1 +1,405 @@
+//1st page (ask mail)
+//forget_page.xml
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unicycle">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/sign_in_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.123"
+        app:srcCompat="@drawable/unicyclelogo" />
+
+    <LinearLayout
+        android:id="@+id/sign_in_box"
+        android:layout_width="343dp"
+        android:layout_height="407dp"
+        android:background="@drawable/rounded_corner_background"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.535">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="ENTER YOUR ICHAT MAIL"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <EditText
+            android:id="@+id/user_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_background"
+            android:ems="10"
+            android:hint="✉️xxx@ichat.sp.edu.sg"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_forget_password1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/button_background_blue"
+            android:padding="12dp"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+//otp.xml
+//otp asking page
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unicycle">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/sign_in_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.123"
+        app:srcCompat="@drawable/unicyclelogo" />
+
+    <LinearLayout
+        android:id="@+id/sign_in_box"
+        android:layout_width="343dp"
+        android:layout_height="407dp"
+        android:background="@drawable/rounded_corner_background"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.535">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+            android:id="@+id/user_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_background"
+            android:ems="10"
+            android:hint="✉️"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/otp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:hint="Enter Your OTP"
+                android:inputType="number"
+                android:padding="12dp"
+                android:textSize="20sp" />
+
+
+
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_forget_password3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/button_background_blue"
+            android:padding="12dp"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+//enter_password.xml
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unicycle">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/sign_in_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.123"
+        app:srcCompat="@drawable/unicyclelogo" />
+
+    <LinearLayout
+        android:id="@+id/sign_in_box"
+        android:layout_width="343dp"
+        android:layout_height="407dp"
+        android:background="@drawable/rounded_corner_background"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.535">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_background"
+            android:ems="10"
+            android:hint="🔑Enter your password"
+            android:inputType="number"
+            android:padding="12dp"
+            android:textSize="20sp" />
+            <EditText
+                android:id="@+id/re_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:hint="🔑Re-enter your password"
+                android:inputType="number"
+                android:padding="12dp"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_forget_password2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/button_background_blue"
+            android:padding="12dp"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+//successful.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/password_succesful_page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/succesful" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Your Password has been reset"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_password_successful_back"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_background_blue"
+            android:padding="12dp"
+            android:text="Back"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="3dp"/>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+//put these code into drawable before u insert above codes
+
+//rounded_corner_background.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#f1f3f6"/>
+    <corners android:radius="12dp"/>
+    <padding android:left="16dp" android:top="16dp" android:right="16dp" android:bottom="16dp"/>
+</shape>
+
+
+//round_corner.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/round_corner_shadow" />
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="#f1f3f6"/>
+        <corners android:radius="12dp" />
+        <padding android:left="16dp"
+            android:top="16dp"
+            android:right="16dp"
+            android:bottom="16dp"
+            />
+
+    </shape>
+</layer-list>
+
+
+//rectangle_9.xml
+
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="271dp"
+    android:height="42dp"
+    android:viewportWidth="271"
+    android:viewportHeight="42"
+    >
+    <group>
+        <clip-path
+            android:pathData="M21 0H250C261.598 0 271 9.40202 271 21C271 32.598 261.598 42 250 42H21C9.40202 42 0 32.598 0 21C0 9.40202 9.40202 0 21 0Z"
+            />
+        <path
+            android:pathData="M0 0V42H271V0"
+            android:fillColor="#012258"
+            />
+        <path
+            android:pathData="M21 0H250C261.598 0 271 9.40202 271 21C271 32.598 261.598 42 250 42H21C9.40202 42 0 32.598 0 21C0 9.40202 9.40202 0 21 0Z"
+            android:strokeWidth="2"
+            android:strokeColor="#FFFFFF"
+            />
+    </group>
+</vector>
+
+
+
+//edit_text_background.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF"/>
+    <corners android:radius="10dp"/>
+    <stroke android:width="1dp" android:color="#DDDDDD"/>
+</shape>
+
+
+
+//button_background_blue.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#FF5722"/> <!-- Button background color when pressed -->
+            <corners android:radius="80dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#1A237E"/> <!-- Default button background color -->
+            <corners android:radius="80dp"/>
+        </shape>
+    </item>
+</selector>
 
